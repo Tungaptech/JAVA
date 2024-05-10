@@ -1,22 +1,22 @@
 package AS01;
 
-//lam nhiem vu dieu huong khach hang nhap va hien thi thong tin
+//lam nhiem vu dieu huong danh sách bài viết nhap va hien thi thong tin
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-//lam nhiem vu dieu huong khach hang nhap va hien thi thong tin
+//lam nhiem vu dieu huong danh sách bài viết nhap va hien thi thong tin
 
 public class DanhSachBaiVietController {
 
-    //tao ra noi luu tru danh sach khach hang
+    //tao ra noi luu tru danh sach bài viết
     //Bien nay nam ngoai pham vi cua ham create de duoc su dung trong
     //cac ham khac cua lop DanhSachBaiVietController.
     //Viec khai bao o day giup du lieu nhap vao duoc giu lai khi goi cac ham khac
     ArrayList<DanhSachBaiViet> danhSachBaiViets = new ArrayList<>();
     Scanner scanner = new Scanner(System.in);
 
-    //1. Cho phep tao moi thong tin khach hang
+    //1. Cho phep tao moi thong tin danh sách bài viết
     public void create() {
 
 
@@ -39,7 +39,7 @@ public class DanhSachBaiVietController {
         String ngayViet = scanner.nextLine();
 
 
-//Tao ra mot doi tuong customer tu thong tin nhap vao
+//Tao ra mot doi tuong danhsachbaiviet tu thong tin nhap vao
         DanhSachBaiViet danhSachBaiViet = new DanhSachBaiViet();
         danhSachBaiViet.setId(id);
         danhSachBaiViet.setTieuDe(tieuDe);
@@ -49,7 +49,7 @@ public class DanhSachBaiVietController {
         danhSachBaiViet.setNgayViet(ngayViet);
         danhSachBaiViet.setAnhDaiDien(anhDaiDien);
 
-        //Dua custumer va list
+        //Dua daanhsachbaiviet  va list
         danhSachBaiViets.add(danhSachBaiViet);
     }
 
